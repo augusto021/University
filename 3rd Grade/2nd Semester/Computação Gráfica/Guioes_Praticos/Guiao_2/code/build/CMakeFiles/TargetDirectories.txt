@@ -1,3 +1,0 @@
-/home/mcnograma/Documentos/[MEI]/[4Ano]/[Cadeiras 3ºano]/[CG]/Aula Prática 2/code/build/CMakeFiles/class2.dir
-/home/mcnograma/Documentos/[MEI]/[4Ano]/[Cadeiras 3ºano]/[CG]/Aula Prática 2/code/build/CMakeFiles/edit_cache.dir
-/home/mcnograma/Documentos/[MEI]/[4Ano]/[Cadeiras 3ºano]/[CG]/Aula Prática 2/code/build/CMakeFiles/rebuild_cache.dir
