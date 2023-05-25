@@ -1,7 +1,10 @@
-# so_2022
-
+# SDStore: Armazenamento Eficiente e Seguro de Ficheiros
 _Trabalho Prático de Sistemas Operativos_
-# Grupo 77 #
-+ Pedro Ferreira -> a93303
-+ Teresa Fortes -> 93250
-+ João Augusto -> 93326
+
+## Curso: Sistemas Operativos
+
+### Grupo 77 
+* João Augusto Macedo Moreira a93326
+* Pedro Miguel Marques Ferreira a93303
+* Teresa Fortes a93250
+
