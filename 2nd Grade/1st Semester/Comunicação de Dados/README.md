@@ -1,7 +1,14 @@
-Módulo A: Júlio Beites Gonçalves
+# Sistema de Conversão de Dados
 
-Módulo B: João Duarte Laranjo Cerquido, Norberto Alexandre Nunes
+### Curso: MIEI
 
-Módulo C: Daniel Constantino Faria, João Augusto Moreira
+### Unidade Curricular: Comunicação de Dados
+---
 
-Módulo D: João Luis Santos, Lídia Anais Coelho Sousa
+* Módulo A: Júlio Beites Gonçalves
+
+* Módulo B: João Duarte Laranjo Cerquido, Norberto Alexandre Nunes
+
+* Módulo C: Daniel Constantino Faria, João Augusto Moreira
+
+* Módulo D: João Luis Santos, Lídia Anais Coelho Sousa
