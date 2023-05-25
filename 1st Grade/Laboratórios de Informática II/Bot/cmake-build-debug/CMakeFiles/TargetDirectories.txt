@@ -1,0 +1,3 @@
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/cmake-build-debug/CMakeFiles/Bot.dir

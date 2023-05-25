@@ -1,0 +1,596 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Logicadoprograma_8h" kind="file" language="C++">
+    <compoundname>Logicadoprograma.h</compoundname>
+    <includes refid="Dados_8h" local="yes">Dados.h</includes>
+    <includes refid="Listas_8h" local="yes">Listas.h</includes>
+    <includedby refid="Dados_8c" local="yes">projeto/Dados.c</includedby>
+    <includedby refid="Interface_8c" local="yes">projeto/Interface.c</includedby>
+    <includedby refid="Listas_8c" local="yes">projeto/Listas.c</includedby>
+    <includedby refid="main_8c" local="yes">projeto/main.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2">
+        <label>Dados.h</label>
+        <link refid="Dados_8h"/>
+      </node>
+      <node id="1">
+        <label>projeto/Logicadoprograma.h</label>
+        <link refid="Logicadoprograma_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Listas.h</label>
+        <link refid="Listas_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="Logicadoprograma_8h_1a9397c4ac1b8123798a4bc9043a0b761a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pos_valido</definition>
+        <argsstring>(ESTADO *e, int num)</argsstring>
+        <name>pos_valido</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Função que verifica se o nº inserido no comando &quot;pos&quot; é válido. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o Estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>variável do tipo int</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+===============================================CAMADA DA LOGICA==================================================== Função que verifica se o nº inserido no comando &quot;pos&quot; é válido. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="15" column="5" bodyfile="projeto/Logicadoprograma.c" bodystart="10" bodyend="15" declfile="projeto/Logicadoprograma.h" declline="15" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1a4252811a8bd947e0811eb0fc426330b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int comand_pos</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>comand_pos</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função booleana que verifica se o último comando executado foi o pos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para Estado</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função booleana que verifica se o último comando executado goi o pos. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="21" column="5" bodyfile="projeto/Logicadoprograma.c" bodystart="18" bodyend="23" declfile="projeto/Logicadoprograma.h" declline="21" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1abaf69371db38ee90de333df0902e788a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int posicao_em_relacao_branca</definition>
+        <argsstring>(COORDENADA c, COORDENADA brc)</argsstring>
+        <name>posicao_em_relacao_branca</name>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>brc</declname>
+        </param>
+        <briefdescription>
+<para>Função que atribui um número as posições a volta da peça branca: Posição superior esquerda ==1 Posição a cima ==2 Posição superior direita ==3 Posição a direita ==4 Posição inferior direita ==5 Posição a baixo ==6 Posição inferior esquerda ==7 Posição a esquerda ==8. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Coordenada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>branca</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Coordenada</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função que atribui um número as posições a volta da peça branca: Posição superior esquerda ==1 Posição a cima ==2 Posição superior direita ==3 Posição a direita ==4 Posição inferior direita ==5 Posição a baixo ==6 Posição inferior esquerda ==7 Posição a esquerda ==8 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="36" column="5" bodyfile="projeto/Logicadoprograma.c" bodystart="34" bodyend="59" declfile="projeto/Logicadoprograma.h" declline="36" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1a479831e8bdd70b471c270ca34fefa345" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int jogada_completa</definition>
+        <argsstring>(JOGADA play)</argsstring>
+        <name>jogada_completa</name>
+        <param>
+          <type><ref refid="structJOGADA" kindref="compound">JOGADA</ref></type>
+          <declname>play</declname>
+        </param>
+        <briefdescription>
+<para>Função que verifica se uma jogada é completa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>play</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>para coordenada <ref refid="structJOGADA" kindref="compound">JOGADA</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função que verifica se uma jogada é completa. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="42" column="5" bodyfile="projeto/Logicadoprograma.c" bodystart="62" bodyend="69" declfile="projeto/Logicadoprograma.h" declline="42" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1a930df6d8a2c0de10d0d70cafeee61c32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* coord_to_str</definition>
+        <argsstring>(COORDENADA coord)</argsstring>
+        <name>coord_to_str</name>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>coord</declname>
+        </param>
+        <briefdescription>
+<para>Função que converte uma <ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref> para uma string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Coordenada</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função que converte uma <ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref> para uma string. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="48" column="6" bodyfile="projeto/Logicadoprograma.c" bodystart="72" bodyend="85" declfile="projeto/Logicadoprograma.h" declline="48" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1aebc3f2533e0f31eab1efc5c687058768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+        <definition>COORDENADA str_to_coord</definition>
+        <argsstring>(char str[])</argsstring>
+        <name>str_to_coord</name>
+        <param>
+          <type>char</type>
+          <declname>str</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Função que transforma uma string numa jogada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string que contém o nome do file</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função que transforma uma string numa jogada. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="54" column="12" bodyfile="projeto/Logicadoprograma.c" bodystart="88" bodyend="94" declfile="projeto/Logicadoprograma.h" declline="54" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1a2ffe600d2bd5255460de56fa4e0f2e6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int casa_livre</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>casa_livre</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Função que verifica se uma casa está livre, isto é, se é vazia e pertence ao tabuleiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o Estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Coordenada</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função que uma casa está livre, isto é, se é vazia e pertence ao tabuleiro. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="61" column="5" bodyfile="projeto/Logicadoprograma.c" bodystart="97" bodyend="105" declfile="projeto/Logicadoprograma.h" declline="61" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1aa5b2c4470db8f12ec5ed5bfefaa47cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dist_valida</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>dist_valida</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Função booleana que verifica se a distância da próxima jogada é válida. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o Estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Coordenada</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função booleana que verifica se a distância da próxima jogada é válida </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="68" column="5" bodyfile="projeto/Logicadoprograma.c" bodystart="108" bodyend="121" declfile="projeto/Logicadoprograma.h" declline="68" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1ab1160bacb55fe9977b2a60e615c2e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int jogada_valida</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>jogada_valida</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Função booleana que verifica se a próxima jogada é válida. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A coordenada</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função booleana que verifica se a próxima jogada é válida. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="75" column="5" bodyfile="projeto/Logicadoprograma.c" bodystart="124" bodyend="130" declfile="projeto/Logicadoprograma.h" declline="75" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1a40267453816c8fee2f1b6e11dacb2929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Dados_8h_1ab8d2e03f1be6ed043ab77a0ea6d0c3fd" kindref="member">ERROS</ref></type>
+        <definition>ERROS jogar</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>jogar</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Função que retorna o erro OK se a jogada é valida, se não retorna o respetivo erro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para Estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Coordenada</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função que retorna o erro OK se a jogada é valida se não retorna o respetivo erro. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="82" column="7" bodyfile="projeto/Logicadoprograma.c" bodystart="133" bodyend="139" declfile="projeto/Logicadoprograma.h" declline="82" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1a065f5596b6a6e23e20e76fb2f1afa724" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int prioridade_casa</definition>
+        <argsstring>(ESTADO *e, int plr, COORDENADA c)</argsstring>
+        <name>prioridade_casa</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plr</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Função que atribui uma prioridade as casas dependendo do jogador: Para o jogador 1, a prioridade vai aumentando na diagonal, do canto superior direito para o canto inferior esquerdo; Para o jogador 2, a prioridade vai aumentando na diagonal, mas no sentido oposto. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inteiro para número do jogador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Coordenada</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função que atribui um prioridade as casas dependendo do jogador: Para o jogador 1, a prioridade vai aumentando na diagonal, do canto superior direito para o canto inferior esquerdo Para o jogador 2, a prioridade vai aumentando na diagonal, mas no sentido oposto </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="92" column="5" bodyfile="projeto/Logicadoprograma.c" bodystart="144" bodyend="176" declfile="projeto/Logicadoprograma.h" declline="92" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1ab3aa45195cd7d98a9f9ce361d4ee20dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+        <definition>COORDENADA jogadaEclidiana</definition>
+        <argsstring>(ESTADO *e, LISTA l1, int plr)</argsstring>
+        <name>jogadaEclidiana</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structsLista" kindref="compound">LISTA</ref></type>
+          <declname>l1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plr</declname>
+        </param>
+        <briefdescription>
+<para>Função que recebe um <ref refid="structESTADO" kindref="compound">ESTADO</ref> e uma LISTA de casas vizinhas vazias e devolve a <ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref> da melhor jogada segundo a Euristica Euclidiana. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A lista </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inteiro para número do jogador</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função que recebe um <ref refid="structESTADO" kindref="compound">ESTADO</ref> e uma LISTA de casas vizinhas vazias e devolve a <ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref> da melhor jogada segundo a Eurística Euclidiana Ao invés de calcular a distância, a estratégia foi dando ás casas vazias uma prioridade para cada jogador. Assim esta função começa por percorrer essa lista, comparando dois a dois a prioridade e guardando sempre o maior valor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="100" column="12" bodyfile="projeto/Logicadoprograma.c" bodystart="181" bodyend="228" declfile="projeto/Logicadoprograma.h" declline="100" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1a8c028dd6ba64233d27ebceddadb91a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int branca_presa</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>branca_presa</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que verifica se a peça branca está presa e se sim, devolve um, se não retorna zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o Estado</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função que verifica se a peça branca está presa e se sim devolve 1, senão retorna 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="106" column="5" bodyfile="projeto/Logicadoprograma.c" bodystart="231" bodyend="238" declfile="projeto/Logicadoprograma.h" declline="106" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="Logicadoprograma_8h_1aefe8f94a70d46f79a1e61accc4fd8542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int end_game</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>end_game</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que verifica se o jogo acabou e se sim então devolve o nº do jogador vencedor, caso contrário devolve zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o Estado</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Função que verifica se o jogo acabou e se sim então devolve o nº do jogador vencedor, caso contrário devolve zero. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Logicadoprograma.h" line="112" column="5" bodyfile="projeto/Logicadoprograma.c" bodystart="242" bodyend="258" declfile="projeto/Logicadoprograma.h" declline="112" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definição das jogadas </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>LI2PL7G05_LOGICA_DO_PROGRAMA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LI2PL7G05_LOGICA_DO_PROGRAMA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Dados_8h" kindref="compound">Dados.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Listas_8h" kindref="compound">Listas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Logicadoprograma_8h_1a9397c4ac1b8123798a4bc9043a0b761a" kindref="member">pos_valido</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Logicadoprograma_8h_1a4252811a8bd947e0811eb0fc426330b4" kindref="member">comand_pos</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Logicadoprograma_8h_1abaf69371db38ee90de333df0902e788a" kindref="member">posicao_em_relacao_branca</ref>(<ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>brc);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Logicadoprograma_8h_1a479831e8bdd70b471c270ca34fefa345" kindref="member">jogada_completa</ref>(<ref refid="structJOGADA" kindref="compound">JOGADA</ref><sp/>play);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="Logicadoprograma_8h_1a930df6d8a2c0de10d0d70cafeee61c32" kindref="member">coord_to_str</ref>(<ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>coord);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/><ref refid="Logicadoprograma_8h_1aebc3f2533e0f31eab1efc5c687058768" kindref="member">str_to_coord</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>str[]);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Logicadoprograma_8h_1a2ffe600d2bd5255460de56fa4e0f2e6c" kindref="member">casa_livre</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Logicadoprograma_8h_1aa5b2c4470db8f12ec5ed5bfefaa47cc5" kindref="member">dist_valida</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Logicadoprograma_8h_1ab1160bacb55fe9977b2a60e615c2e627" kindref="member">jogada_valida</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><ref refid="Dados_8h_1ab8d2e03f1be6ed043ab77a0ea6d0c3fd" kindref="member">ERROS</ref><sp/><ref refid="Logicadoprograma_8h_1a40267453816c8fee2f1b6e11dacb2929" kindref="member">jogar</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Logicadoprograma_8h_1a065f5596b6a6e23e20e76fb2f1afa724" kindref="member">prioridade_casa</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plr,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/><ref refid="Logicadoprograma_8h_1ab3aa45195cd7d98a9f9ce361d4ee20dd" kindref="member">jogadaEclidiana</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<ref refid="structsLista" kindref="compound">LISTA</ref><sp/>l1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plr);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Logicadoprograma_8h_1a8c028dd6ba64233d27ebceddadb91a7a" kindref="member">branca_presa</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Logicadoprograma_8h_1aefe8f94a70d46f79a1e61accc4fd8542" kindref="member">end_game</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//LI2PL7G05_LOGICA_DO_PROGRAMA_H</highlight></codeline>
+    </programlisting>
+    <location file="projeto/Logicadoprograma.h"/>
+  </compounddef>
+</doxygen>

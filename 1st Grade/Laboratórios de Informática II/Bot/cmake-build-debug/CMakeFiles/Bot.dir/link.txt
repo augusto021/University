@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Bot.dir/main.c.o CMakeFiles/Bot.dir/estrategia.c.o CMakeFiles/Bot.dir/Dados.c.o CMakeFiles/Bot.dir/Interface.c.o CMakeFiles/Bot.dir/Logicadoprograma.c.o CMakeFiles/Bot.dir/Listas.c.o  -o Bot 
