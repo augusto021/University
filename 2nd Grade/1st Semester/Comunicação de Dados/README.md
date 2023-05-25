@@ -1,4 +1,4 @@
-# Sistema de Conversão de Dados
+# Sistema de Conversão de Ficheiros
 
 ### Curso: MIEI
 
