@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structsLista" kind="struct" language="C++" prot="public">
+    <compoundname>sLista</compoundname>
+    <includes refid="Listas_8h" local="no">Listas.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsLista_1a1d23232cbeeb9dc3ab7f59087c17c2b7" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* sLista::variavel</definition>
+        <argsstring></argsstring>
+        <name>variavel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Listas.h" line="14" column="10" bodyfile="projeto/Listas.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsLista_1a6c6093ff604a821d5457b73a46529e09" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structsLista" kindref="compound">sLista</ref> *</type>
+        <definition>struct sLista* sLista::prox</definition>
+        <argsstring></argsstring>
+        <name>prox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Listas.h" line="15" column="17" bodyfile="projeto/Listas.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>========================================MODULO DAS LISTAS LIGADAS================================================== </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>sLista</label>
+        <link refid="structsLista"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>prox</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="projeto/Listas.h" line="13" column="21" bodyfile="projeto/Listas.h" bodystart="13" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structsLista_1a6c6093ff604a821d5457b73a46529e09" prot="public" virt="non-virtual"><scope>sLista</scope><name>prox</name></member>
+      <member refid="structsLista_1a1d23232cbeeb9dc3ab7f59087c17c2b7" prot="public" virt="non-virtual"><scope>sLista</scope><name>variavel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

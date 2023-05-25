@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/Dados.h
+
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/Listas.c
+Listas.h
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/Listas.h
+Logicadoprograma.h
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/Logicadoprograma.h
+stdlib.h
+-
+stdio.h
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/stdio.h
+
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/Listas.h
+Dados.h
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/Dados.h
+stdlib.h
+-
+
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/Logicadoprograma.h
+Dados.h
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/Dados.h
+Listas.h
+/Users/isinha_perez/Desktop/LI2/LI2PL7G05/Bot/Listas.h
+

@@ -1,0 +1,683 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Dados_8c" kind="file" language="C++">
+    <compoundname>Dados.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="Dados_8h" local="yes">Dados.h</includes>
+    <includes refid="Logicadoprograma_8h" local="yes">Logicadoprograma.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+      <node id="1">
+        <label>projeto/Dados.c</label>
+        <link refid="Dados_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Dados.h</label>
+        <link refid="Dados_8h"/>
+      </node>
+      <node id="4">
+        <label>Logicadoprograma.h</label>
+        <link refid="Logicadoprograma_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Listas.h</label>
+        <link refid="Listas_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="Dados_8c_1ad27ba940f567e0be932e535902021cd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void start_jogadas</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>start_jogadas</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que inicializa o array das jogadas com -1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>===============================================CAMADA DOS DADOS==================================================== Função que inicia o array das jogadas com Coordenadas a -1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="12" column="6" bodyfile="projeto/Dados.c" bodystart="12" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a7e0c7e26fb685d9ab501e19b05e6954f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+        <definition>ESTADO* inicializar_estado</definition>
+        <argsstring>()</argsstring>
+        <name>inicializar_estado</name>
+        <briefdescription>
+<para>Função que inicializa um estado vazio e com o tabuleiro inicializado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que inicializa um estado vazio e com o tabuleiro inicializado. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="19" column="8" bodyfile="projeto/Dados.c" bodystart="19" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1ad6e326e4ffa57ca1ae0c75377ecefc8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_jogador_atual</definition>
+        <argsstring>(ESTADO *estado)</argsstring>
+        <name>obter_jogador_atual</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>estado</declname>
+        </param>
+        <briefdescription>
+<para>Função que devolve o número do jogador atual. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que devolve o número do jogador atual. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="49" column="5" bodyfile="projeto/Dados.c" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a6cd0b387bdee9e18003c78852394aa63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_numero_de_jogadas</definition>
+        <argsstring>(ESTADO *estado)</argsstring>
+        <name>obter_numero_de_jogadas</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>estado</declname>
+        </param>
+        <briefdescription>
+<para>Função que devolve o número de jogadas que foram efetuadas (cada jogada contém os dois movimentos dos jogadores). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que devolve o número de jogadas que foram efetuadas (cada jogada contém os dois movimentos dos jogadores). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="54" column="5" bodyfile="projeto/Dados.c" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a86f898b1ea1b15a6353dd16e9e6d78cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+        <definition>COORDENADA obter_ultimajogada</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>obter_ultimajogada</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que devolve a coordenada da última jogada efetuada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que devolve a coordenada da última jogada efetuada. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="59" column="12" bodyfile="projeto/Dados.c" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a9b242f00edfc2776549c9798905c5347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_numero_comando</definition>
+        <argsstring>(ESTADO *estado)</argsstring>
+        <name>obter_numero_comando</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>estado</declname>
+        </param>
+        <briefdescription>
+<para>Função que devolve o nº de comandos usados no prompt. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que devolve o nº de comandos usados no prompt. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="64" column="5" bodyfile="projeto/Dados.c" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a6faa68373203923729ed38657aa0f768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref></type>
+        <definition>CASA obter_estado_casa</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>obter_estado_casa</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Função que devolve a CASA dado uma <ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que devolve a CASA dado uma <ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="69" column="6" bodyfile="projeto/Dados.c" bodystart="69" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a653ef3e8c985a4b211433ed91aebcb01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_ultimo_comand</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>obter_ultimo_comand</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que devolve o último comando executado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que devolve o último comando executado. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="78" column="5" bodyfile="projeto/Dados.c" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a4061108e3b10291b7e5caae38a002d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+        <definition>COORDENADA obter_coord_jogadaX</definition>
+        <argsstring>(ESTADO *e, int num, int plr)</argsstring>
+        <name>obter_coord_jogadaX</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plr</declname>
+        </param>
+        <briefdescription>
+<para>Função que retorna a coordenada da jogada dado um <ref refid="structESTADO" kindref="compound">ESTADO</ref>, o número da jogada e o número do jogador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que retorna a coordenada da jogada dado um <ref refid="structESTADO" kindref="compound">ESTADO</ref>, o número da jogada e o número do jogador. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="83" column="12" bodyfile="projeto/Dados.c" bodystart="83" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a87014a5f18dfb15fd425518b6113a41c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structJOGADA" kindref="compound">JOGADA</ref></type>
+        <definition>JOGADA obter_jogada</definition>
+        <argsstring>(ESTADO *e, int n_jogada)</argsstring>
+        <name>obter_jogada</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_jogada</declname>
+        </param>
+        <briefdescription>
+<para>Função que devolve uma certa jogada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que devole uma certa jogada. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="92" column="8" bodyfile="projeto/Dados.c" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1adfa209d5f7b51a3ea019f89f8a6e57b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_jog_pos</definition>
+        <argsstring>(ESTADO *estado)</argsstring>
+        <name>obter_jog_pos</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>estado</declname>
+        </param>
+        <briefdescription>
+<para>Função que devolve o nº da jogada, guardada no comando pos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que devolve o nº da jogada, guardado no comando pos. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="97" column="5" bodyfile="projeto/Dados.c" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a2d9ffb3b3b48fe8a52f9f2eb59c5764f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atualiza_num_jogada</definition>
+        <argsstring>(ESTADO *e, int num_jog)</argsstring>
+        <name>atualiza_num_jogada</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_jog</declname>
+        </param>
+        <briefdescription>
+<para>Função que atualiza o nº da jogada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que modifica o <ref refid="structESTADO" kindref="compound">ESTADO</ref> se a jogada for válida/*/ void <ref refid="Dados_8h_1a598b3397540e456ea6bfb1326e6fc6c5" kindref="member">atualiza_estado(ESTADO *e, COORDENADA c)</ref>{ int i, j, x, y;</para>
+<para><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref> branc = obter_ultimajogada(e); i=branc.linha; j=branc.coluna; x=c.linha; y=c.coluna;</para>
+<para>e-&gt;tab[i][j] = PRETA; e-&gt;tab[x][y] = BRANCA;</para>
+<para>if (obter_numero_de_jogadas(e) == 0) e-&gt;num_jogadas = 1;</para>
+<para>e-&gt;ultima_jogada.linha = x; e-&gt;ultima_jogada.coluna = y;</para>
+<para>if (obter_jogador_atual(e)==1){ int num = obter_numero_de_jogadas(e); e-&gt;jogadas[num-1].jogador1 = obter_ultimajogada(e); e-&gt;jogador_atual = 2; }else if (obter_jogador_atual(e)==2){ int num = obter_numero_de_jogadas(e); e-&gt;jogadas[num -1].jogador2 = obter_ultimajogada(e); e-&gt;jogador_atual = 1; e-&gt;num_jogadas++; } }</para>
+<para>/** Função que atualiza o nº da jogada. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="135" column="6" bodyfile="projeto/Dados.c" bodystart="135" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a34423ba176740a47fe988269870dbc42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_casa</definition>
+        <argsstring>(ESTADO *e, COORDENADA c, CASA valor)</argsstring>
+        <name>set_casa</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="Dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref></type>
+          <declname>valor</declname>
+        </param>
+        <briefdescription>
+<para>Função que altera o <ref refid="structESTADO" kindref="compound">ESTADO</ref> conforme vai lendo dados de um tabuleiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que altera o <ref refid="structESTADO" kindref="compound">ESTADO</ref> conforme vai lendo dados de um tabuleiro. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="140" column="6" bodyfile="projeto/Dados.c" bodystart="140" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a0565af71577da7246626c60b0ed2f8b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void armazenar_jogada</definition>
+        <argsstring>(ESTADO *e, JOGADA jgd, int jogada)</argsstring>
+        <name>armazenar_jogada</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structJOGADA" kindref="compound">JOGADA</ref></type>
+          <declname>jgd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jogada</declname>
+        </param>
+        <briefdescription>
+<para>Função que introduz uma <ref refid="structJOGADA" kindref="compound">JOGADA</ref> &apos;jgd&apos; no array de índice &apos;jogada&apos;-1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que introduz uma <ref refid="structJOGADA" kindref="compound">JOGADA</ref> &apos;jgd&apos; no array de índice &apos;jogada&apos;-1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="152" column="6" bodyfile="projeto/Dados.c" bodystart="152" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1af43897f227390f083dc17d9160f5eb9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atualiza_ultima_jog_e_jogador</definition>
+        <argsstring>(ESTADO *e, JOGADA jgd)</argsstring>
+        <name>atualiza_ultima_jog_e_jogador</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structJOGADA" kindref="compound">JOGADA</ref></type>
+          <declname>jgd</declname>
+        </param>
+        <briefdescription>
+<para>Função que atualiza a última jogada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que atualiza a última jogada. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="161" column="6" bodyfile="projeto/Dados.c" bodystart="161" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1aff214d7b297f9af87a175f3be0381a86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atualiza_num_comandos</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>atualiza_num_comandos</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que atualiza o nº de comandos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que atualiza o nº de comandos. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="176" column="6" bodyfile="projeto/Dados.c" bodystart="176" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a877534f22b8b4e80a9a724b91eb62962" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copia_num_comandos</definition>
+        <argsstring>(ESTADO *novo, ESTADO *e)</argsstring>
+        <name>copia_num_comandos</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>novo</declname>
+        </param>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que copia o nº de comandos de um estado para o outro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que copia o nº de comandos de um estado para o outro. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="181" column="6" bodyfile="projeto/Dados.c" bodystart="181" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a8a61a501a9a55117564ed3b3d492b988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atualiza_comando</definition>
+        <argsstring>(ESTADO *e, char *cmd, int num)</argsstring>
+        <name>atualiza_comando</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Função que atualiza o último comando executado na estrutura do <ref refid="structESTADO" kindref="compound">ESTADO</ref>. Usado principalmente para o comando &apos;pos&apos; que atribui-lhe o número &apos;5&apos; e guarda o número de jogada a qual se pretende retroceder. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que atualiza o último comando executado na estrutura do <ref refid="structESTADO" kindref="compound">ESTADO</ref>. Usado principalmente para o comando &apos;pos&apos; que atribui-lhe o numero &apos;5&apos; e guarda o numero de jogada a qual se pretende retroceder </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="188" column="6" bodyfile="projeto/Dados.c" bodystart="188" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="Dados_8c_1a29625aa4c80a22d358108cb4b4ab8c66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void executa_jogada</definition>
+        <argsstring>(ESTADO *e, JOGADA play)</argsstring>
+        <name>executa_jogada</name>
+        <param>
+          <type><ref refid="structESTADO" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="structJOGADA" kindref="compound">JOGADA</ref></type>
+          <declname>play</declname>
+        </param>
+        <briefdescription>
+<para>Função que atualiza o <ref refid="structESTADO" kindref="compound">ESTADO</ref> quando o comando &apos;pos&apos; é executado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Função que atualiza o <ref refid="structESTADO" kindref="compound">ESTADO</ref> quando o comando &apos;pos&apos; é executado. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto/Dados.c" line="210" column="6" bodyfile="projeto/Dados.c" bodystart="210" bodyend="228"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Dados_8h" kindref="compound">Dados.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Logicadoprograma_8h" kindref="compound">Logicadoprograma.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----Funções<sp/>de<sp/>inicialização:----//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1ad27ba940f567e0be932e535902021cd1" kindref="member">start_jogadas</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>32;<sp/>i++){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1afae43b87a488fad0f2b56a18bad31d18" kindref="member">jogadas</ref>[i]<sp/>=<sp/>(<ref refid="structJOGADA" kindref="compound">JOGADA</ref>)<sp/>{(<ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref>){-1,-1},<sp/>(<ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref>){-1,-1}};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*<ref refid="Dados_8h_1a7e0c7e26fb685d9ab501e19b05e6954f" kindref="member">inicializar_estado</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e<sp/>=<sp/><sp/>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*)<sp/>calloc(1,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structESTADO" kindref="compound">ESTADO</ref>));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a5dd28e2e68b7aef2b6b7ea88e02eff58" kindref="member">jogador_atual</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a261495728744647e618b4e623f5a4b7a" kindref="member">num_jogadas</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Dados_8h_1ad27ba940f567e0be932e535902021cd1" kindref="member">start_jogadas</ref>(e);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a4896a5c5c1f40b43fb795623327e3f47" kindref="member">ultima_jogada</ref>.linha<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a4896a5c5c1f40b43fb795623327e3f47" kindref="member">ultima_jogada</ref>.coluna<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>8;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>8;<sp/>j++)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[i][j]<sp/>=<sp/>VAZIO;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[0][7]<sp/>=<sp/>DOIS;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[7][0]<sp/>=<sp/>UM;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[3][4]<sp/>=<sp/>BRANCA;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1adf1064dfc09145b6995a7897249f1674" kindref="member">num_comando</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;ultimo_comando.cmd<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;ultimo_comando.n_pos<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----Funções<sp/>que<sp/>devolvem<sp/>um<sp/>certo<sp/>dado<sp/>do<sp/>ESTADO----//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1acc6c25533188a99cb69c12e7f2c406ef" kindref="member">obter_jogador_atual</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*estado){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>estado-&gt;<ref refid="structESTADO_1a5dd28e2e68b7aef2b6b7ea88e02eff58" kindref="member">jogador_atual</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1abbfeab93575f20e5867482fd41a71cba" kindref="member">obter_numero_de_jogadas</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*estado){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>estado-&gt;<ref refid="structESTADO_1a261495728744647e618b4e623f5a4b7a" kindref="member">num_jogadas</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/><ref refid="Dados_8h_1a86f898b1ea1b15a6353dd16e9e6d78cb" kindref="member">obter_ultimajogada</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(e-&gt;<ref refid="structESTADO_1a4896a5c5c1f40b43fb795623327e3f47" kindref="member">ultima_jogada</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1a9b242f00edfc2776549c9798905c5347" kindref="member">obter_numero_comando</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*estado){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>estado-&gt;<ref refid="structESTADO_1adf1064dfc09145b6995a7897249f1674" kindref="member">num_comando</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><ref refid="Dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref><sp/><ref refid="Dados_8h_1a6faa68373203923729ed38657aa0f768" kindref="member">obter_estado_casa</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/>lin;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>col=c.coluna;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>lin=c.linha;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[lin][col];</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1a653ef3e8c985a4b211433ed91aebcb01" kindref="member">obter_ultimo_comand</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e-&gt;ultimo_comando.cmd;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/><ref refid="Dados_8h_1a4061108e3b10291b7e5caae38a002d64" kindref="member">obter_coord_jogadaX</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plr){</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c1;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(plr<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c1<sp/>=<sp/>e-&gt;<ref refid="structESTADO_1afae43b87a488fad0f2b56a18bad31d18" kindref="member">jogadas</ref>[num-1].jogador1;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>c1<sp/>=<sp/>e-&gt;<ref refid="structESTADO_1afae43b87a488fad0f2b56a18bad31d18" kindref="member">jogadas</ref>[num-1].jogador2;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c1;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><ref refid="structJOGADA" kindref="compound">JOGADA</ref><sp/><ref refid="Dados_8h_1a87014a5f18dfb15fd425518b6113a41c" kindref="member">obter_jogada</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_jogada){</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e-&gt;<ref refid="structESTADO_1afae43b87a488fad0f2b56a18bad31d18" kindref="member">jogadas</ref>[n_jogada<sp/>-1];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1adfa209d5f7b51a3ea019f89f8a6e57b3" kindref="member">obter_jog_pos</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*estado){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>estado-&gt;ultimo_comando.n_pos;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----Funções<sp/>de<sp/>atualização<sp/>de<sp/>estado----//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1a598b3397540e456ea6bfb1326e6fc6c5" kindref="member">atualiza_estado</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c){</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j,<sp/>x,<sp/>y;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>branc<sp/>=<sp/><ref refid="Dados_8h_1a86f898b1ea1b15a6353dd16e9e6d78cb" kindref="member">obter_ultimajogada</ref>(e);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>i=branc.linha;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>j=branc.coluna;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>x=c.linha;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>y=c.coluna;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[i][j]<sp/>=<sp/>PRETA;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[x][y]<sp/>=<sp/>BRANCA;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="Dados_8h_1abbfeab93575f20e5867482fd41a71cba" kindref="member">obter_numero_de_jogadas</ref>(e)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a261495728744647e618b4e623f5a4b7a" kindref="member">num_jogadas</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a4896a5c5c1f40b43fb795623327e3f47" kindref="member">ultima_jogada</ref>.linha<sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a4896a5c5c1f40b43fb795623327e3f47" kindref="member">ultima_jogada</ref>.coluna<sp/>=<sp/>y;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="Dados_8h_1acc6c25533188a99cb69c12e7f2c406ef" kindref="member">obter_jogador_atual</ref>(e)==1){</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num<sp/>=<sp/><ref refid="Dados_8h_1abbfeab93575f20e5867482fd41a71cba" kindref="member">obter_numero_de_jogadas</ref>(e);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1afae43b87a488fad0f2b56a18bad31d18" kindref="member">jogadas</ref>[num-1].jogador1<sp/>=<sp/><ref refid="Dados_8h_1a86f898b1ea1b15a6353dd16e9e6d78cb" kindref="member">obter_ultimajogada</ref>(e);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a5dd28e2e68b7aef2b6b7ea88e02eff58" kindref="member">jogador_atual</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="Dados_8h_1acc6c25533188a99cb69c12e7f2c406ef" kindref="member">obter_jogador_atual</ref>(e)==2){</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num<sp/>=<sp/><ref refid="Dados_8h_1abbfeab93575f20e5867482fd41a71cba" kindref="member">obter_numero_de_jogadas</ref>(e);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1afae43b87a488fad0f2b56a18bad31d18" kindref="member">jogadas</ref>[num<sp/>-1].jogador2<sp/>=<sp/><ref refid="Dados_8h_1a86f898b1ea1b15a6353dd16e9e6d78cb" kindref="member">obter_ultimajogada</ref>(e);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a5dd28e2e68b7aef2b6b7ea88e02eff58" kindref="member">jogador_atual</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a261495728744647e618b4e623f5a4b7a" kindref="member">num_jogadas</ref>++;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1a2d9ffb3b3b48fe8a52f9f2eb59c5764f" kindref="member">atualiza_num_jogada</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_jog){</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a261495728744647e618b4e623f5a4b7a" kindref="member">num_jogadas</ref><sp/>=<sp/>num_jog;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1a34423ba176740a47fe988269870dbc42" kindref="member">set_casa</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c,<sp/><ref refid="Dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref><sp/>valor)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(valor)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;*&apos;</highlight><highlight class="normal"><sp/>:<sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[c.linha][c.coluna]<sp/>=<sp/>BRANCA;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal"><sp/>:<sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[c.linha][c.coluna]<sp/>=<sp/>PRETA;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal"><sp/>:<sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[c.linha][c.coluna]<sp/>=<sp/>UM;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;2&apos;</highlight><highlight class="normal"><sp/>:<sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[c.linha][c.coluna]<sp/>=<sp/>DOIS;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[c.linha][c.coluna]<sp/>=<sp/>VAZIO;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1a5bc3e46599216488f8f34926cdf1a87a" kindref="member">armazenar_jogada</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structJOGADA" kindref="compound">JOGADA</ref><sp/>jgd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jogada){</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c1<sp/>=<sp/>jgd.jogador1;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c2<sp/>=<sp/>jgd.jogador2;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1afae43b87a488fad0f2b56a18bad31d18" kindref="member">jogadas</ref>[jogada-1].jogador1<sp/>=<sp/>c1;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1afae43b87a488fad0f2b56a18bad31d18" kindref="member">jogadas</ref>[jogada-1].jogador2<sp/>=<sp/>c2;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1af43897f227390f083dc17d9160f5eb9e" kindref="member">atualiza_ultima_jog_e_jogador</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<ref refid="structJOGADA" kindref="compound">JOGADA</ref><sp/>jgd){</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c1<sp/>=<sp/>jgd.jogador1;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>c2<sp/>=<sp/>jgd.jogador2;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c2.linha<sp/>==<sp/>-1<sp/>&amp;&amp;<sp/>c2.coluna<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a5dd28e2e68b7aef2b6b7ea88e02eff58" kindref="member">jogador_atual</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a4896a5c5c1f40b43fb795623327e3f47" kindref="member">ultima_jogada</ref><sp/>=<sp/>c1;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a5dd28e2e68b7aef2b6b7ea88e02eff58" kindref="member">jogador_atual</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a4896a5c5c1f40b43fb795623327e3f47" kindref="member">ultima_jogada</ref><sp/>=<sp/>c2;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1aff214d7b297f9af87a175f3be0381a86" kindref="member">atualiza_num_comandos</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1adf1064dfc09145b6995a7897249f1674" kindref="member">num_comando</ref>++;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1a877534f22b8b4e80a9a724b91eb62962" kindref="member">copia_num_comandos</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*novo,<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>novo-&gt;<ref refid="structESTADO_1adf1064dfc09145b6995a7897249f1674" kindref="member">num_comando</ref><sp/>=<sp/>e-&gt;<ref refid="structESTADO_1adf1064dfc09145b6995a7897249f1674" kindref="member">num_comando</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1a8a61a501a9a55117564ed3b3d492b988" kindref="member">atualiza_comando</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*cmd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num){</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(num<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(cmd,<sp/></highlight><highlight class="stringliteral">&quot;movs&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultimo_comando.cmd<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(cmd,<sp/></highlight><highlight class="stringliteral">&quot;gr&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultimo_comando.cmd<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(cmd,<sp/></highlight><highlight class="stringliteral">&quot;ler&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultimo_comando.cmd<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(cmd,<sp/></highlight><highlight class="stringliteral">&quot;jog&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultimo_comando.cmd<sp/>=<sp/>6;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(cmd,<sp/></highlight><highlight class="stringliteral">&quot;jog2&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultimo_comando.cmd<sp/>=<sp/>7;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(cmd,<sp/></highlight><highlight class="stringliteral">&quot;Q&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultimo_comando.cmd<sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(cmd,<sp/></highlight><highlight class="stringliteral">&quot;tab&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultimo_comando.cmd<sp/>=<sp/>9;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>e-&gt;ultimo_comando.cmd<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;ultimo_comando<sp/>=<sp/>(<ref refid="structCOMANDO" kindref="compound">COMANDO</ref>)<sp/>{5,<sp/>num};</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Dados_8h_1a29625aa4c80a22d358108cb4b4ab8c66" kindref="member">executa_jogada</ref>(<ref refid="structESTADO" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structJOGADA" kindref="compound">JOGADA</ref><sp/>play){</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>pl1<sp/>=<sp/>play.jogador1;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>pl2<sp/>=<sp/>play.jogador2;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref><sp/>branc<sp/>=<sp/><ref refid="Dados_8h_1a86f898b1ea1b15a6353dd16e9e6d78cb" kindref="member">obter_ultimajogada</ref>(e);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[branc.linha][branc.coluna]<sp/>=<sp/>PRETA;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="Logicadoprograma_8h_1a479831e8bdd70b471c270ca34fefa345" kindref="member">jogada_completa</ref>(play)==1){</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[pl1.linha][pl1.coluna]<sp/>=<sp/>PRETA;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[pl2.linha][pl2.coluna]<sp/>=<sp/>BRANCA;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a5dd28e2e68b7aef2b6b7ea88e02eff58" kindref="member">jogador_atual</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a4896a5c5c1f40b43fb795623327e3f47" kindref="member">ultima_jogada</ref><sp/>=<sp/>pl2;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" kindref="member">tab</ref>[pl1.linha][pl1.coluna]<sp/>=<sp/>BRANCA;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a5dd28e2e68b7aef2b6b7ea88e02eff58" kindref="member">jogador_atual</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a4896a5c5c1f40b43fb795623327e3f47" kindref="member">ultima_jogada</ref><sp/>=<sp/>pl1;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="structESTADO_1a261495728744647e618b4e623f5a4b7a" kindref="member">num_jogadas</ref>++;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="projeto/Dados.c"/>
+  </compounddef>
+</doxygen>
