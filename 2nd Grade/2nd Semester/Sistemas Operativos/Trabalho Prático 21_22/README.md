@@ -1,7 +1,7 @@
 # SDStore: Armazenamento Eficiente e Seguro de Ficheiros
 _Trabalho Prático de Sistemas Operativos_
 
-## Curso: Sistemas Operativos
+## Curso: MiEI
 
 ### Grupo 77 
 * João Augusto Macedo Moreira a93326
