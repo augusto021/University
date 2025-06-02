@@ -1,0 +1,2 @@
+10 abc on 20 off 30 = on 40 off 50 =
+100 abc On 200 OFf 300 On fgh 400 500
