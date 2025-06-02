@@ -18,5 +18,3 @@ Abaixo encontra-se a lista dos TPCs desenvolvidos ao longo da unidade curricular
 4. TPC4 - "Analisador Léxico"
 5. TPC5 - "Simulação de uma Máquina de Vending"
 6. TPC6 - "Parser LL(1) para Expressões Aritméticas"
-7. TPC7 - "título"
-8. TPC8 - "título"
