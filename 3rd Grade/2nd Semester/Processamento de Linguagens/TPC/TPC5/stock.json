@@ -1,0 +1,32 @@
+{
+    "A23": {
+      "nome": "\u00c1gua 0.5L",
+      "quantidade": 6,
+      "preco": 0.7
+    },
+    "B45": {
+      "nome": "Coca Cola",
+      "quantidade": 10,
+      "preco": 1.2
+    },
+    "C67": {
+      "nome": "Batatas Fritas",
+      "quantidade": 5,
+      "preco": 1.5
+    },
+    "D89": {
+      "nome": "Compal Laranja",
+      "quantidade": 6,
+      "preco": 1.0
+    },
+    "E12": {
+      "nome": "Chocolate",
+      "quantidade": 7,
+      "preco": 1.8
+    },
+    "F34": {
+      "nome": "Bolachas",
+      "quantidade": 0,
+      "preco": 1.3
+    }
+  }
